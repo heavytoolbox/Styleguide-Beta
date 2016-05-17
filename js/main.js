@@ -22,7 +22,6 @@ function callSeeAlso(s) {
 	}
 }
 $(document).ready(function(){
-	alert ('here');
 	var p = window.location.pathname.split('/').pop();
 	currPage = p.substr(0, p.lastIndexOf('.')) || p;
 	topBarH = $(".top-bar.vis").height();
