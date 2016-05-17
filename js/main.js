@@ -26,11 +26,11 @@ $(document).ready(function(){
 	var path = loc.substring(0, loc.lastIndexOf("/"));
 	currPage = path.substring(path.lastIndexOf("/")+1);
 	topBarH = $(".top-bar.vis").height();
-	var pages = ['introduction', 'index', 'te_papa_names', 'iwi_names', 'glosses', 'acquisition_credits'];
+	var pages = ['introduction', 'a-to-z', 'te_papa_names', 'iwi_names', 'glosses', 'acquisition_credits'];
 	var i = $.inArray(currPage, pages) + 1;
 	$("nav li:nth-child("+i+")").addClass('selected');
 	
-	if (currPage == 'index' || currPage == 'te_papa_names' || currPage == 'iwi_names'|| currPage == 'glosses'){
+	if (currPage == 'a-to-z' || currPage == 'te_papa_names' || currPage == 'iwi_names'|| currPage == 'glosses'){
 		$("#search").focus();
 		$("tbody").addClass("list");
 		$("table").addClass(currPage);
@@ -52,7 +52,7 @@ $(document).ready(function(){
 		$("a[id^='_anchor']").click(function(e) {
 			e.preventDefault();
 		});
-		if (currPage == 'index' || currPage == 'glosses'){
+		if (currPage == 'a-to-z' || currPage == 'glosses'){
 			$("h3").addClass( "headword" );
 			$("td+td+td").addClass( "extras" );// or use 'nth' to skip other cols? (test ie)
 			var options = {
