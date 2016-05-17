@@ -3,7 +3,7 @@ function callExact (){
 	var o = $("h3").filter(function() {
     			return $.trim($(this).text().toLowerCase()) === txt;
 		});
-	var t = 10 + topBarH; 
+	var t = topBarH - 10; 
 	window.scrollTo (0, o.offset().top-t);// should check if exists first
 }
 function callSeeAlso(s) {
