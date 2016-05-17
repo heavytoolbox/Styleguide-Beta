@@ -54,6 +54,7 @@ $(document).ready(function(){
 			})
     });
 		$("a[id^='_anchor']").click(function(e) {
+			alert ('clicked');
 			e.preventDefault();
 		});
 		if (currPage == 'a-to-z' || currPage == 'glosses'){
