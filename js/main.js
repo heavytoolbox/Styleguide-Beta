@@ -17,7 +17,7 @@ function callSeeAlso(s) {
 		}
 	}
 	$("#search").val(word);
-	if (currPage == 'index' || currPage == 'glosses'){
+	if (currPage == 'a-to-z' || currPage == 'glosses'){
 		callExact ();
 	}
 }
@@ -26,11 +26,11 @@ $(document).ready(function(){
 	var path = loc.substring(0, loc.lastIndexOf("/"));
 	currPage = path.substring(path.lastIndexOf("/")+1);
 	topBarH = $(".top-bar.vis").height();
-	var pages = ['introduction', 'a-to-z', 'te_papa_names', 'iwi_names', 'glosses', 'acquisition_credits'];
+	var pages = ['introduction', 'a-to-z', 'te-papa-names', 'iwi-names', 'glosses', 'acquisition-credits'];
 	var i = $.inArray(currPage, pages) + 1;
 	$("nav li:nth-child("+i+")").addClass('selected');
 	
-	if (currPage == 'a-to-z' || currPage == 'te_papa_names' || currPage == 'iwi_names'|| currPage == 'glosses'){
+	if (currPage == 'a-to-z' || currPage == 'te-papa-names' || currPage == 'iwi-names'|| currPage == 'glosses'){
 		$("#search").focus();
 		$("tbody").addClass("list");
 		$("table").addClass(currPage);
@@ -65,7 +65,7 @@ $(document).ready(function(){
 				callSeeAlso($(this).text());
 			});
 		}
-		else if (currPage == 'te_papa_names') {
+		else if (currPage == 'te-papa-names') {
 			$("table:last td").attr('colspan',3);
 			$("table:first  > tbody:last").append($("table:last > tbody").html());
 			$("table:last").remove();
@@ -78,7 +78,7 @@ $(document).ready(function(){
 				$('.read-more-content').toggleClass('hide');
 			});
 		}
-		else if (currPage == 'iwi_names') {
+		else if (currPage == 'iwi-names') {
 			$("td:first-child").addClass( "headword" );
 			$("td+td+td").addClass( "extras" );
 			var options = {
