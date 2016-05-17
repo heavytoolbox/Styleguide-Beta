@@ -45,6 +45,11 @@ nav {
 	color: white;
 	padding-top: 0.2em;
 	padding-left: 2.5em;
+	
+	background-image: url('{{ site.baseurl }}/images/rainbow.png');
+    	background-repeat: no-repeat;
+	background-attachment: fixed;
+    	background-position: left bottom; 
 }
 .top-bar.hid {
 	
