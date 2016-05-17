@@ -3,8 +3,12 @@ function callExact (){
 	var o = $("h3").filter(function() {
     			return $.trim($(this).text().toLowerCase()) === txt;
 		});
-	var t = topBarH - 10; 
-	window.scrollTo (0, o.offset().top-t);// should check if exists first
+	if (o){
+		window.scrollTo (0, o.offset().top-topBarH);
+	}
+	else{
+		window.scrollTo (0, $("table:first").offset().top - topBarH);
+	}
 }
 function callSeeAlso(s) {
 	var word = s.trim();
