@@ -22,8 +22,9 @@ function callSeeAlso(s) {
 	}
 }
 $(document).ready(function(){
-	var p = window.location.pathname.split('/').pop();
-	currPage = p.substr(0, p.lastIndexOf('.')) || p;
+	var loc = window.location.pathname;
+	currPage = loc.substring(0, loc.lastIndexOf('/'));
+	alert (currPage);
 	topBarH = $(".top-bar.vis").height();
 	var pages = ['introduction', 'index', 'te_papa_names', 'iwi_names', 'glosses', 'acquisition_credits'];
 	var i = $.inArray(currPage, pages) + 1;
