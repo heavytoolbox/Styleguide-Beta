@@ -38,25 +38,7 @@ $(document).ready(function(){
 		$("#search").focus();
 		$("tbody").addClass("list");
 		$("table").addClass(currPage);
-		$("div[id^='_com']").addClass("invis");
-		$("a[id^='_anchor']").addClass("tooltip");
 		
-		$("a[id^='_anchor']").each(function( index ) {
-			var i = $(this).attr('id').substring(8);
-			$(this).tooltipster({
-                		animation: 'fade',
-				delay: 100,
-				theme: 'tooltipster-punk',// i hacked the default css file to save exta file load
-				touchDevices: true,
-				trigger: 'click',
-				contentAsHTML: true,
-				content: $("div[id^='_com_"+i+"']").html()
-			})
-    });
-		$("a[id^='_anchor']").click(function(e) {
-			alert ('clicked');
-			e.preventDefault();
-		});
 		if (currPage == 'a-to-z' || currPage == 'glosses'){
 			$("h3").addClass( "headword" );
 			$("td+td+td").addClass( "extras" );// or use 'nth' to skip other cols? (test ie)
@@ -94,6 +76,24 @@ $(document).ready(function(){
 		searchList.on('updated', function(list) {
         		window.scrollTo (0, $("table:first").offset().top - topBarH);
       		});
+      		$("div[id^='_com']").addClass("invis");
+		$("a[id^='_anchor']").addClass("tooltip");
+		
+		$("a[id^='_anchor']").each(function( index ) {
+			var i = $(this).attr('id').substring(8);
+			$(this).tooltipster({
+                		animation: 'fade',
+				delay: 100,
+				theme: 'tooltipster-punk',// i hacked the default css file to save exta file load
+				touchDevices: true,
+				trigger: 'click',
+				contentAsHTML: true,
+				content: $("div[id^='_com_"+i+"']").html()
+			})
+    		});
+		$("a[id^='_anchor']").click(function(e) {
+			e.preventDefault();
+		});
 		$("#clear").click(function(){
 			$("#search").val('');
 			searchList.search ('');
