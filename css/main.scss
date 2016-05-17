@@ -1,5 +1,6 @@
 ---
 ---
+$navW: 12em;
 h3 {
 	font-size: 0.9em;
 }
@@ -23,7 +24,7 @@ h6 {
 	font-weight: normal;
 }
 nav {
-	width: 11.5em;
+	width: $navW;
 	height: 100%;
 	position: fixed;top:0;left:0;
 	background-color: white;
@@ -37,7 +38,7 @@ nav h1, nav p {
 	margin-bottom: 1em;
 }
 .top-bar.vis {
-	position: fixed;top:0;left:12em;
+	position: fixed;top:0;left:$navW+1em;
 	padding-top: 0.2em;
 	padding-left: 2.5em;
 }
@@ -71,33 +72,33 @@ nav li a {
 	display: block;
 	padding: 0.2em 0.5em 0.2em 0.5em;
 	text-decoration: none;
-	color: #fff;
+	color: black;
 }
 nav li a:hover {
-    background-color: lightblue;
-    color: #000;
+    text-decoration: underline;
+    //color: #000;
 }
 nav li.selected a {
     font-weight: bold;
     color: #00e;
 }
 button {
-    background-color: #4CAF50; /* Green */
+    background-color: #5CA038; /* Green */
     border: none;
     color: white;
     padding: 5px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-	cursor: pointer;
+    cursor: pointer;
     border-radius: 8px;
-	margin: 0;
+    margin: 0;
 }
 button#exact {
-    background-color: blue;
+    background-color: #65BFD4;
 }
 main {
-	margin-left: 14em;
+	margin-left: $navW+1em;
 	max-width: 60em;
 }
 table, th, td {
@@ -133,7 +134,7 @@ th, td {
 td {
 	max-width: 45em;
 }
-table.index td:first-child {
+table.a-to-z td:first-child {
 	max-width: 13em;
 }
 td:first-child + td {
@@ -144,6 +145,7 @@ input {
   border:solid 1px #ccc;
   border-radius: 5px;
   padding: 0.3em 0.3em;
+  margin-bottom: 0.5em;
 }
 input:focus {
   outline:none;
