@@ -31,6 +31,7 @@
       </ul>
     </nav>
       <main>
+        {% if page.searchbar %}
         <div class="top-bar vis">
           <p>
             <input id="search" class="search" placeholder="Search headwords" />
@@ -39,6 +40,7 @@
           </p>
         </div>
         <div class="top-bar hid">&nbsp</div>
+        {% endif %}
           <!-- ################## START OF CONTENT ######################### -->
           {{ content }}
           <!-- ################## END OF CONTENT ######################### -->
