@@ -23,7 +23,7 @@ function callSeeAlso(s) {
 }
 $(document).ready(function(){
 	var loc = window.location.pathname;
-	currPage = loc.substring(0, loc.lastIndexOf('/'));
+	currPage = loc.substring(0, loc.lastIndexOf('/')+1);
 	alert (currPage);
 	topBarH = $(".top-bar.vis").height();
 	var pages = ['introduction', 'index', 'te_papa_names', 'iwi_names', 'glosses', 'acquisition_credits'];
