@@ -1,8 +1,8 @@
 ---
 layout: AtoZ
 title: A to Z
-peramlink: /index/
+peramlink: /a-to-z/
 searchbar: true
 comments: true
 ---
-<p>foo</p>
+
