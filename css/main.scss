@@ -41,7 +41,7 @@ nav {
 }
 .top-bar.vis {
 	position: fixed;top:0;left:12em;
-	background-color: black;
+	//background-color: black;
 	color: white;
 	padding-top: 0.2em;
 	padding-left: 2.5em;
@@ -49,7 +49,7 @@ nav {
 	background-image: url('{{ site.baseurl }}/images/rainbow.png');
     	background-repeat: no-repeat;
 	background-attachment: fixed;
-    	background-position: bottom left; 
+    	background-position: left bottom; 
 }
 .top-bar.hid {
 	
