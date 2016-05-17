@@ -22,14 +22,7 @@ function callSeeAlso(s) {
 	}
 }
 $(document).ready(function(){
-	if (Modernizr.multiplebgs) {
-  // supported
-  alert ('yep');
-} else {
-  // not-supported
-  alert ('nope');
-}
-var loc = window.location.pathname;
+	var loc = window.location.pathname;
 	var path = loc.substring(0, loc.lastIndexOf("/"));
 	currPage = path.substring(path.lastIndexOf("/")+1);
 	topBarH = $(".top-bar.vis").height();
