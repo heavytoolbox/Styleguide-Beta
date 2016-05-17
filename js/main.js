@@ -34,6 +34,8 @@ $(document).ready(function(){
 	var i = $.inArray(currPage, pages) + 1;
 	$("nav li:nth-child("+i+")").addClass('selected');
 	
+	$('*').removeAttr('style');
+	
 	if (currPage == 'a-to-z' || currPage == 'te-papa-names' || currPage == 'iwi-names'|| currPage == 'glosses'){
 		$("#search").focus();
 		$("tbody").addClass("list");
