@@ -146,6 +146,9 @@ td {
 table.a-to-z td:first-child {
 	max-width: 13em;
 }
+table.a-to-z td:last-child {
+	min-width: 15em;
+}
 td:first-child + td {
 	min-width: 25em;
 }
