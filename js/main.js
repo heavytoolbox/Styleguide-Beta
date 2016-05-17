@@ -25,7 +25,6 @@ $(document).ready(function(){
 	var loc = window.location.pathname;
 	var path = loc.substring(0, loc.lastIndexOf("/"));
 	currPage = path.substring(path.lastIndexOf("/")+1);
-	alert (currPage);
 	topBarH = $(".top-bar.vis").height();
 	var pages = ['introduction', 'index', 'te_papa_names', 'iwi_names', 'glosses', 'acquisition_credits'];
 	var i = $.inArray(currPage, pages) + 1;
