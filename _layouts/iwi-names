@@ -1,0 +1,47 @@
+---
+layout: default
+---
+{{ content }}
+
+<table border="1" cellpadding="0" cellspacing="0">
+	<thead>
+		<tr>
+			<th style="height:26px; width:228px">
+			<p><a name="_Toc397850668"></a><a name="_Toc397850238"><strong>Correct Māori version</strong></a></p>
+			</th>
+			<th style="height:26px; width:201px">
+			<p><strong>Notes</strong></p>
+			</th>
+			<th style="height:26px; width:228px">
+			<p><a name="_Toc397850667"></a><a name="_Toc397850237"><strong>English version (no macrons)</strong></a></p>
+
+			<p>This column is here to support electronic searches. The correct ....</p>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="height:26px; width:228px">
+			<p>Kāi xxx</p>
+			</td>
+			<td style="height:26px; width:201px">
+			<p>Kāi is a name used by people of ...</p>
+			</td>
+			<td style="height:26px; width:228px">
+			<p><s>Kai ...</s></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:26px; width:228px">
+			<p>Kāti xxx</p>
+			</td>
+			<td style="height:26px; width:201px">
+			<p>Same as above, &lsquo;Kāti&rsquo; is used by the people of xxx</p>
+			</td>
+			<td style="height:26px; width:228px">
+			<p><s>Kati xxx</s></p>
+			</td>
+		</tr>
+		
+	</tbody>
+</table>
