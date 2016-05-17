@@ -4,7 +4,7 @@ function callExact (){
     			return $.trim($(this).text().toLowerCase()) === txt;
 		});
 	if (o){
-		window.scrollTo (0, o.offset().top-topBarH);
+		window.scrollTo (0, (o.offset().top-topBarH)-10);
 	}
 	else{
 		window.scrollTo (0, $("table:first").offset().top - topBarH);
