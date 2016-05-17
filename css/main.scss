@@ -3,7 +3,7 @@
 body { 
     background-image: url('{{ site.baseurl }}/images/BW-thumbprint.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    //background-attachment: fixed;
     background-position: center top; 
 }
 h3 {
@@ -41,7 +41,7 @@ nav {
 }
 .top-bar.vis {
 	position: fixed;top:0;left:12em;
-	//background-color: black;
+	background-color: white;
 	//color: white;
 	padding-top: 0.2em;
 	padding-left: 2.5em;
