@@ -23,12 +23,13 @@ h6 {
 	font-weight: normal;
 }
 nav {
-	padding-left: 0.5em;
-	padding-right: 0.5em;
 	width: 11.5em;
 	height: 100%;
 	position: fixed;top:0;left:0;
-	background-color: #65BFD4;
+	background-color: white;
+}
+nav h1, nav p {
+	padding: 0.5em;
 }
 .top-bar {
 	width: 100%;
@@ -58,27 +59,27 @@ nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 4em;
+	//margin-bottom: 4em;
 }
 nav li {
-	border-bottom: 1px dotted white;
+	border-bottom: 1px dotted #ccc;
 }
 nav li:last-child {
     border-bottom: none;
 }
 nav li a {
 	display: block;
-	padding: 0.2em 0 0.2em 0.6em;
+	padding: 0.2em 0.5em 0.2em 0.5em;
 	text-decoration: none;
-	color: #000;
+	color: #fff;
 }
 nav li a:hover {
     background-color: lightblue;
     color: #000;
 }
 nav li.selected a {
-    background-color: #555;
-    color: white;
+    font-weight: bold;
+    color: #00e;
 }
 button {
     background-color: #4CAF50; /* Green */
