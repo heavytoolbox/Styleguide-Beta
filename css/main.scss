@@ -1,8 +1,9 @@
 ---
 ---
 $navW: 12em;
-h1 {
+nav h1 {
 	font-size: 1.5em;
+	margin: 0;
 }
 h3 {
 	font-size: 0.9em;
@@ -32,8 +33,12 @@ nav {
 	position: fixed;top:0;left:0;
 	background-color: #EFF2F0;
 }
-nav h1, nav p {
+nav h1 {
 	padding: 0.5em;
+}
+nav p {
+	padding: 0;
+	margin: 0.2em 0 0 0;
 }
 .top-bar {
 	width: 100%;
