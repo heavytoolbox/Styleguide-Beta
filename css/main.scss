@@ -1,11 +1,5 @@
 ---
 ---
-body { 
-    background-image: url('{{ site.baseurl }}/images/BW-thumbprint.jpg');
-    background-repeat: no-repeat;
-    //background-attachment: fixed;
-    background-position: center top; 
-}
 h3 {
 	font-size: 0.9em;
 }
@@ -42,14 +36,16 @@ nav {
 .top-bar.vis {
 	position: fixed;top:0;left:12em;
 	background-color: white;
-	//color: white;
 	padding-top: 0.2em;
 	padding-left: 2.5em;
 	
-	background-image: url('{{ site.baseurl }}/images/rainbow.png');
-    	background-repeat: no-repeat;
+	//background-image: url('{{ site.baseurl }}/images/rainbow.png');
+    	//background-repeat: no-repeat;
 	//background-attachment: fixed;
-    	background-position: left bottom; 
+    	//background-position: left bottom; 
+    	background: 
+   		url('{{ site.baseurl }}/images/rainbow.png') no-repeat left bottom,
+   		url('{{ site.baseurl }}/images/BW-thumbprint.jpg') no-repeat center top;
 }
 .top-bar.hid {
 	
