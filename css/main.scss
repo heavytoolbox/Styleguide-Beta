@@ -38,14 +38,16 @@ nav {
 	background-color: white;
 	padding-top: 0.2em;
 	padding-left: 2.5em;
-	
-	//background-image: url('{{ site.baseurl }}/images/rainbow.png');
-    	//background-repeat: no-repeat;
-	//background-attachment: fixed;
-    	//background-position: left bottom; 
+}
+.multiplebgs .top-bar.vis {
     	background: 
    		url('{{ site.baseurl }}/images/rainbow.png') no-repeat left bottom,
    		url('{{ site.baseurl }}/images/BW-thumbprint.jpg') no-repeat 30em top;
+}
+.no-multiplebgs .top-bar.vis {
+	background-image: url('{{ site.baseurl }}/images/rainbow.png');
+    	background-repeat: no-repeat;
+    	background-position: left bottom;
 }
 .top-bar.hid {
 	
