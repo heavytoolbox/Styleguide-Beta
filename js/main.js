@@ -8,7 +8,7 @@ function callExact (){
 		window.scrollTo (window.pageXOffset, o.offset().top - ($(".top-bar.vis").height() + 10));
 	}
 	else{
-		window.scrollTo (window.pageXOffset, $("table:first").offset().top - ($(".top-bar.vis").height() + 10));
+		window.scrollTo (window.pageXOffset, 0);//$("table:first").offset().top - ($(".top-bar.vis").height() + 10)
 	}
 }
 function callSeeAlso(s) {
@@ -30,7 +30,6 @@ $(document).ready(function(){
 	var loc = window.location.pathname;
 	var path = loc.substring(0, loc.lastIndexOf("/"));
 	currPage = path.substring(path.lastIndexOf("/")+1);
-	//topBarH = $(".top-bar.vis").height();
 	var pages = ['introduction', 'a-to-z', 'te-papa-names', 'iwi-names', 'glosses', 'acquisition-credits'];
 	var i = $.inArray(currPage, pages) + 1;
 	$("nav li:nth-child("+i+")").addClass('selected');
@@ -42,7 +41,7 @@ $(document).ready(function(){
 		
 		if (currPage == 'a-to-z' || currPage == 'glosses'){
 			$("h3").addClass( "headword" );
-			$("td+td+td").addClass( "extras" );// or use 'nth' to skip other cols? (test ie)
+			$("td+td+td").addClass( "extras" );
 			var options = {
 				valueNames: [ 'headword','extras' ]
 			};
@@ -75,7 +74,7 @@ $(document).ready(function(){
 		}
 		searchList = new List('styleguide', options);
 		searchList.on('updated', function(list) {
-			window.scrollTo (window.pageXOffset, ($("table:first").offset().top - $(".top-bar.vis").height())-10);
+			window.scrollTo (window.pageXOffset, 0);//($("table:first").offset().top - $(".top-bar.vis").height())-10
       		});
       		$("div[id^='_com']").addClass("invis");
 		$("a[id^='_anchor']").addClass("tooltip");
