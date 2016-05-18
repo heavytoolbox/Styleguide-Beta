@@ -136,9 +136,9 @@ td:first-child + td {
 	min-width: 25em;
 }
 input {
-  width: 15em;
-  font-size: 3em;
-  line-height: 4em;
+  width: 10em;
+  font-size: 2.5em;
+  line-height: 3em;
   border:solid 1px #ccc;
   border-radius: 5px;
   padding: 0.3em 0.3em;
@@ -159,8 +159,8 @@ button {
     cursor: pointer;
     border-radius: 8px;
     margin: 0;
-    font-size: 3em;
-    line-height: 4em;
+    font-size: 2.5em;
+    line-height: 3em;
 }
 button#exact {
     background-color: #65BFD4;
