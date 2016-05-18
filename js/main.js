@@ -31,6 +31,7 @@ function callSeeAlso(s) {
 function topIsUnfixed() {
 	var el = $('.top-bar.vis');
 	var elPos = el.offset().top;
+	alert (elPos);
 	if ( elPos > 0 ) {
     		return true;
 	}
