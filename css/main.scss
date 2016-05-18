@@ -18,7 +18,7 @@ h4 {
 }
 p,ul,ol,h6 {
 	font-size: 0.9em;
-	max-width: 48em;
+	//max-width: 48em;
 	line-height: 150%;
 	margin-top: 0.5em;
 	margin-bottom: 0.8em;
@@ -60,9 +60,6 @@ nav p {
 	background-image: url('{{ site.baseurl }}/images/rainbow.png');
     	background-repeat: no-repeat;
     	background-position: left bottom;
-}
-.top-bar.hid {
-	
 }
 nav ul {
 	list-style-type: none;
@@ -115,7 +112,7 @@ table, th, td {
 }
 table {
 	border-collapse: collapse;
-	max-width: 60em;
+	//max-width: 60em;
 	border: transparent;
 }
 table td, table th {
