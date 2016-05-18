@@ -3,14 +3,12 @@ function callExact (){
 	var o = $("h3").filter(function() {
     			return $.trim($(this).text().toLowerCase()) === txt;
 		});
-	var s = topIsUnfixed() ? 0 : $(".top-bar.vis").height() + 10;
 	if (o){
 		
-		window.scrollTo (window.pageXOffset, o.offset().top - s);
+		window.scrollTo (window.pageXOffset, o.offset().top - ($(".top-bar.vis").height() + 10));
 	}
 	else{
-		var y = (s == 0) ? 0 : $("table:first").offset().top - s;
-		window.scrollTo (window.pageXOffset, y);
+		window.scrollTo (window.pageXOffset, $("table:first").offset().top - ($(".top-bar.vis").height() + 10));
 	}
 }
 function callSeeAlso(s) {
@@ -26,13 +24,6 @@ function callSeeAlso(s) {
 	$("#search").val(word);
 	if (currPage == 'a-to-z' || currPage == 'glosses'){
 		callExact ();
-	}
-}
-function topIsUnfixed() {
-	if ($('.top-bar.vis').css('position') === 'fixed'){
-		return false;
-	}else{
-		return true;
 	}
 }
 $(document).ready(function(){
@@ -84,8 +75,7 @@ $(document).ready(function(){
 		}
 		searchList = new List('styleguide', options);
 		searchList.on('updated', function(list) {
-        		var s = topIsUnfixed() ? 0 : ($("table:first").offset().top - $(".top-bar.vis").height())-10;
-			window.scrollTo (window.pageXOffset, s);
+			window.scrollTo (window.pageXOffset, ($("table:first").offset().top - $(".top-bar.vis").height())-10);
       		});
       		$("div[id^='_com']").addClass("invis");
 		$("a[id^='_anchor']").addClass("tooltip");
