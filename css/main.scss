@@ -42,7 +42,7 @@ nav p {
 }
 .top-bar {
 	width: 100%;
-	height: 5em;
+	height: 9em;
 	margin-bottom: 1em;
 }
 .top-bar.vis {
@@ -87,21 +87,6 @@ nav a:hover {
 nav li.selected a {
     font-weight: bold;
     color: #0090B5;
-}
-button {
-    background-color: #5CA038; /* Green */
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 8px;
-    margin: 0;
-}
-button#exact {
-    background-color: #65BFD4;
 }
 main {
 	margin-left: $navW+1em;
@@ -151,7 +136,9 @@ td:first-child + td {
 	min-width: 25em;
 }
 input {
-  width: 10em;
+  width: 15em;
+  font-size: 3em;
+  line-height: 4em;
   border:solid 1px #ccc;
   border-radius: 5px;
   padding: 0.3em 0.3em;
@@ -160,6 +147,23 @@ input {
 input:focus {
   outline:none;
   border-color:#aaa;
+}
+button {
+    background-color: #5CA038; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 0;
+    font-size: 3em;
+    line-height: 4em;
+}
+button#exact {
+    background-color: #65BFD4;
 }
 #filler {
 	height:60em;
