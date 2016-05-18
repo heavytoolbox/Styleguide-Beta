@@ -4,10 +4,10 @@ function callExact (){
     			return $.trim($(this).text().toLowerCase()) === txt;
 		});
 	if (o){
-		window.scrollTo (0, (o.offset().top-topBarH)-10);
+		window.scrollTo (0, (o.offset().top-$(".top-bar.vis").height())-10);
 	}
 	else{
-		window.scrollTo (0, $("table:first").offset().top - topBarH);
+		window.scrollTo (0, $("table:first").offset().top - $(".top-bar.vis").height());
 	}
 }
 function callSeeAlso(s) {
@@ -29,7 +29,7 @@ $(document).ready(function(){
 	var loc = window.location.pathname;
 	var path = loc.substring(0, loc.lastIndexOf("/"));
 	currPage = path.substring(path.lastIndexOf("/")+1);
-	topBarH = $(".top-bar.vis").height();
+	//topBarH = $(".top-bar.vis").height();
 	var pages = ['introduction', 'a-to-z', 'te-papa-names', 'iwi-names', 'glosses', 'acquisition-credits'];
 	var i = $.inArray(currPage, pages) + 1;
 	$("nav li:nth-child("+i+")").addClass('selected');
@@ -74,7 +74,7 @@ $(document).ready(function(){
 		}
 		searchList = new List('styleguide', options);
 		searchList.on('updated', function(list) {
-        		window.scrollTo (0, $("table:first").offset().top - topBarH);
+        		window.scrollTo (0, $("table:first").offset().top - $(".top-bar.vis").height());
       		});
       		$("div[id^='_com']").addClass("invis");
 		$("a[id^='_anchor']").addClass("tooltip");
