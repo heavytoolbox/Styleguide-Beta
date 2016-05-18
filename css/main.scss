@@ -111,7 +111,7 @@ main {
 	max-width: 60em;
 }
 table, th, td {
-	width: auto;
+	width: auto !important;
 }
 table {
 	border-collapse: collapse;
