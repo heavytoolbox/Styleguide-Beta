@@ -105,7 +105,8 @@ button#exact {
 }
 main {
 	margin-left: $navW+1em;
-	max-width: 60em;
+	width: 100%;
+	//max-width: 60em;
 }
 table, th, td {
 	width: auto !important;
