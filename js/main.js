@@ -29,13 +29,11 @@ function callSeeAlso(s) {
 	}
 }
 function topIsUnfixed() {
-	var el = $('.top-bar.vis');
-	var elPos = el.offset().top;
-	alert (elPos);
-	if ( elPos > 0 ) {
-    		return true;
+	if ($('.top-bar.vis').css('position') === 'fixed'){
+		return false;
+	}else{
+		return true;
 	}
-	return false;
 }
 $(document).ready(function(){
 	var loc = window.location.pathname;
