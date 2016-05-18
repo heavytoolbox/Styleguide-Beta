@@ -3,11 +3,13 @@ function callExact (){
 	var o = $("h3").filter(function() {
     			return $.trim($(this).text().toLowerCase()) === txt;
 		});
+	var s = topIsUnfixed() ? 0 : $(".top-bar.vis").height() + 10;
 	if (o){
-		window.scrollTo (window.pageXOffset, (o.offset().top-$(".top-bar.vis").height())-10);
+		
+		window.scrollTo (window.pageXOffset, o.offset().top - s);
 	}
 	else{
-		window.scrollTo (window.pageXOffset, $("table:first").offset().top - $(".top-bar.vis").height());
+		window.scrollTo (window.pageXOffset, $("table:first").offset().top - s);
 	}
 }
 function callSeeAlso(s) {
@@ -24,6 +26,14 @@ function callSeeAlso(s) {
 	if (currPage == 'a-to-z' || currPage == 'glosses'){
 		callExact ();
 	}
+}
+function topIsUnfixed() {
+	var el = $('.top-bar.vis');
+	var elPos = el.offset().top;
+	if ( elPos > 0 ) {
+    		return true;
+	}
+	return false;
 }
 $(document).ready(function(){
 	var loc = window.location.pathname;
@@ -74,7 +84,8 @@ $(document).ready(function(){
 		}
 		searchList = new List('styleguide', options);
 		searchList.on('updated', function(list) {
-        		window.scrollTo (window.pageXOffset, $("table:first").offset().top - $(".top-bar.vis").height());
+        		var s = topIsUnfixed() ? 0 : $(".top-bar.vis").height();
+			window.scrollTo (window.pageXOffset, $("table:first").offset().top - s);
       		});
       		$("div[id^='_com']").addClass("invis");
 		$("a[id^='_anchor']").addClass("tooltip");
