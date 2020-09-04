@@ -51,15 +51,10 @@ nav p {
 	//padding-left: 2.5em;
 }
 .multiplebgs .top-bar.vis {
-    	background: 
-   		url('{{ site.baseurl }}/images/rainbow.png') no-repeat left bottom,
-   		white url('{{ site.baseurl }}/images/BW-thumbprint.jpg') no-repeat 30em top;
+    	background: none;
 }
 .no-multiplebgs .top-bar.vis {
-	background-color: white;
-	background-image: url('{{ site.baseurl }}/images/rainbow.png');
-    	background-repeat: no-repeat;
-    	background-position: left bottom;
+	background-color: grey;
 }
 nav ul {
 	list-style-type: none;
