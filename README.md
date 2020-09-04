@@ -1,8 +1,8 @@
-# writingteam.github.io
+#RSNZ Styleguide beta
 
-## Updating content
+Forked with permission from Te Papa September 4, 2020 - writingteam.github.io
 
-To update the content as a Te Papa team member, see 'How to update the Style Guide on GitHub' in the Pou Mataaho folder 'Writing Standards, Guidelines & Processes'. 
+## Needs review and sanitizing from Te Papa fork.
 
 ## Known issues
 
