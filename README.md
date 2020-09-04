@@ -1,4 +1,4 @@
-#RSNZ Styleguide beta
+# RSNZ Styleguide beta
 
 Forked with permission from Te Papa September 4, 2020 - writingteam.github.io
 
